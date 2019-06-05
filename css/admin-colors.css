@@ -4,9 +4,6 @@
  * highlights/shadows, based on a base color.
  */
 body {  
-  background: url("../img/artzona_logo_gray.png") 0 no-repeat;
-  background-position-x: right;
-  background-position-y: bottom;
   background-color: whitesmoke;
 }
 
@@ -521,6 +518,12 @@ div#wp-responsive-toggle a:before {
 .mce-container.mce-menu .mce-menu-item-normal.mce-active,
 .mce-container.mce-menu .mce-menu-item-preview.mce-active {
   background: #D16D15;
+}
+
+#wpwrap{
+    background: url("../img/artzona_logo_gray.png") 0 no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
 }
 
 
