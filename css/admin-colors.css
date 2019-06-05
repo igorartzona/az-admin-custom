@@ -526,4 +526,10 @@ div#wp-responsive-toggle a:before {
     background-position-y: bottom;
 }
 
+.theme-browser .theme.active .theme-name{
+    box-shadow: none;
+}
 
+.theme-browser .theme.active .theme-actions{
+    background: white;
+}
