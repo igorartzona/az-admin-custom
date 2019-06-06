@@ -393,8 +393,8 @@ ul#adminmenu > li.current > a.current:after {
 
 /* Admin Bar: my account */
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
-  border-color: #634c84;
-  background-color: #634c84;
+  border: 0;
+  background: none;
 }
 
 #wpadminbar #wp-admin-bar-user-info .display-name {
