@@ -5,7 +5,7 @@
  * Plugin Name:       az-admin-custom
  * Plugin URI:        https://github.com/igorartzona/az-admin-custom
  * Description:       Кастомизация админки
- * Version:           1.0.0 - dev
+ * Version:           1.1.0 - dev
  * Author:            jvj
  * Author URI:        https://github.com/igorartzona 
  * License:           GPL-2.0+
