@@ -5,7 +5,11 @@
  * Plugin Name:       az-admin-custom
  * Plugin URI:        https://github.com/igorartzona/az-admin-custom
  * Description:       Кастомизация админки
+<<<<<<< HEAD
  * Version:           1.0.0
+=======
+ * Version:           1.1.0 - dev
+>>>>>>> develop
  * Author:            jvj
  * Author URI:        https://github.com/igorartzona 
  * License:           GPL-2.0+
@@ -34,10 +38,33 @@ function az_add_color_schemes() {
 add_action( 'login_head', 'az_add_login_logo' );
 function az_add_login_logo() {
 	?>
+
 	<style type="text/css">
-		#login h1 a { 
-			background-image:url("<?php echo plugins_url( "/img/logo.png", __FILE__ );?>"); 
-		}
-	</style>';
+            #login h1 a { 
+		background-image:url("<?php echo plugins_url( "/img/logo.png", __FILE__ );?>"); 
+            }
+	</style>
+        
 	<?php
+}
+
+/*-----Перенос админбара вниз-----*/
+add_action( 'admin_bar_init', 'adminbar_bottom' );
+function adminbar_bottom() {
+	
+	if( is_admin() ) return;
+	
+	remove_action( 'wp_head', '_admin_bar_bump_cb' );
+	
+	?>
+	
+	<style type="text/css">
+            #wpadminbar {
+		top:auto !important;
+		bottom:0;
+		background:#366482 !important;
+            } 
+	</style>
+	
+	<?php	
 }

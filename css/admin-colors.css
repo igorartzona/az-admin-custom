@@ -40,19 +40,20 @@ input[type=radio]:checked:before {
 /* Core UI */
 .wp-core-ui .button-primary {
   background: #366482;  
-  color: #fff;
-  box-shadow: 0 1px 0 #727f30;
+  color: #fff;  
   text-shadow: none;
   outline: 1px solid silver;
   outline-offset: 2px;
   border-radius:0;
+  box-shadow: none;
+  margin: 0.5em 0;
 }
 
 .wp-core-ui .button-primary:hover, .wp-core-ui .button-primary:focus {
-  background: #d16d15;
-  border-color: #366482;
-  color: #fff;
-  box-shadow: 0 1px 0 #727f30;
+  background: #d16d15;  
+  color: #fff;  
+  box-shadow: none;
+  border-color: white;
 }
 
 .wp-core-ui .button-primary:focus {
@@ -393,8 +394,8 @@ ul#adminmenu > li.current > a.current:after {
 
 /* Admin Bar: my account */
 #wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
-  border-color: #634c84;
-  background-color: #634c84;
+  border: 0;
+  background: none;
 }
 
 #wpadminbar #wp-admin-bar-user-info .display-name {
@@ -526,4 +527,10 @@ div#wp-responsive-toggle a:before {
     background-position-y: bottom;
 }
 
+.theme-browser .theme.active .theme-name{
+    box-shadow: none;
+}
 
+.theme-browser .theme.active .theme-actions{
+    background: white;
+}
