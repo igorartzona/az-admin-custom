@@ -5,7 +5,7 @@
  * Plugin Name:       az-admin-custom
  * Plugin URI:        https://github.com/igorartzona/az-admin-custom
  * Description:       Кастомизация админки
- * Version:           1.1.0 - dev
+ * Version:           1.1.1 - (termoshkafcom)
  * Author:            jvj
  * Author URI:        https://github.com/igorartzona 
  * License:           GPL-2.0+
@@ -45,7 +45,7 @@ function az_add_login_logo() {
 }
 
 /*-----Перенос админбара вниз-----*/
-add_action( 'admin_bar_init', 'adminbar_bottom' );
+//add_action( 'admin_bar_init', 'adminbar_bottom' );
 function adminbar_bottom() {
 	
 	if( is_admin() ) return;
